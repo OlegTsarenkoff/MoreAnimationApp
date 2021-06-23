@@ -1,0 +1,6 @@
+framework module Pods_MoreAnimationApp {
+  umbrella header "Pods-MoreAnimationApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
