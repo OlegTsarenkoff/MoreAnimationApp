@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241E51F326845FB50015A6E5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E51F226845FB50015A6E5 /* SettingsViewController.swift */; };
 		247770362682F868006AC688 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247770352682F868006AC688 /* Animations.swift */; };
 		24E710A926825CB000CD0C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E710A826825CB000CD0C3C /* AppDelegate.swift */; };
 		24E710AB26825CB000CD0C3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E710AA26825CB000CD0C3C /* SceneDelegate.swift */; };
-		24E710AD26825CB000CD0C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E710AC26825CB000CD0C3C /* ViewController.swift */; };
+		24E710AD26825CB000CD0C3C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E710AC26825CB000CD0C3C /* MainViewController.swift */; };
 		24E710B026825CB000CD0C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E710AE26825CB000CD0C3C /* Main.storyboard */; };
 		24E710B226825CB300CD0C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E710B126825CB300CD0C3C /* Assets.xcassets */; };
 		24E710B526825CB300CD0C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E710B326825CB300CD0C3C /* LaunchScreen.storyboard */; };
@@ -18,11 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		241E51F226845FB50015A6E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		247770352682F868006AC688 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		24E710A526825CB000CD0C3C /* MoreAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E710A826825CB000CD0C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E710AA26825CB000CD0C3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24E710AC26825CB000CD0C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24E710AC26825CB000CD0C3C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		24E710AF26825CB000CD0C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24E710B126825CB300CD0C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E710B426825CB300CD0C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,7 +58,8 @@
 		247770312682F606006AC688 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				24E710AC26825CB000CD0C3C /* ViewController.swift */,
+				24E710AC26825CB000CD0C3C /* MainViewController.swift */,
+				241E51F226845FB50015A6E5 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -240,9 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E710AD26825CB000CD0C3C /* ViewController.swift in Sources */,
+				24E710AD26825CB000CD0C3C /* MainViewController.swift in Sources */,
 				24E710A926825CB000CD0C3C /* AppDelegate.swift in Sources */,
 				247770362682F868006AC688 /* Animations.swift in Sources */,
+				241E51F326845FB50015A6E5 /* SettingsViewController.swift in Sources */,
 				24E710AB26825CB000CD0C3C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

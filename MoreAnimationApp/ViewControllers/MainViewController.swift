@@ -7,6 +7,10 @@
 
 import Spring
 
+protocol SettingsViewControllerDelegate {
+    func outputColor(userColor: UIColor, backgroundColor: UIColor, buttonColor: UIColor)
+}
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var animatedView: SpringView!
@@ -19,6 +23,14 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         animatedView.layer.cornerRadius = 15
         runAnimationButton.layer.cornerRadius = 10
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let settingsVC = segue.destination as! SettingsViewController
+        settingsVC.delegate = self
+        settingsVC.userColor = animatedView.backgroundColor
+        settingsVC.buttonUserColor = runAnimationButton.backgroundColor
+        settingsVC.backgroundUserColor = view.backgroundColor
     }
     
     @IBAction func tappedRunButton(_ sender: SpringButton) {
@@ -51,3 +63,11 @@ class MainViewController: UIViewController {
     }
 }
 
+// MARK: - ColorDelegate
+extension MainViewController: SettingsViewControllerDelegate {
+    func outputColor(userColor: UIColor, backgroundColor: UIColor, buttonColor: UIColor){
+        animatedView.backgroundColor = userColor
+        runAnimationButton.backgroundColor = buttonColor
+        view.backgroundColor = backgroundColor
+    }
+}
